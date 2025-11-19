@@ -114,8 +114,28 @@ ul {
   padding: 7px;
   box-sizing: border-box;
   overflow-y: auto;
+
+  /* This makes text on the left and GIF on the right */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
+.text-box {
+  width: 70%;
+
+  /* THIS stacks the text vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between paragraphs */
+}
+
+.right-gif {
+  width: 180px;
+  height: auto;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
 .the-section {
   width: 100%;
   display: flex;
@@ -146,7 +166,7 @@ ul {
   <div class="BOARD">
     <h1 class="shadow" style="color:#FFD4F3;font-family:verdana;font-size:52px;margin:13px;">Hiii ! :3 </h1>
     
-    <p style="font-size:1.em;">╭────༺♡༻────╮</p>
+    <p style="font-size:1.em;">╭───༺♡༻───╮</p>
     <p style="font-size:1.em;"> ♥︎ Welcome to my webpage ♥︎ </p>
     <p style="font-size:1.em;">︶︶ ⊹ ︶︶ ♰ ︶︶ ⊹ ︶︶</p>
   </div>
@@ -181,14 +201,19 @@ ul {
     <div class="main-content">
       <div class="content">
         <div class="container">
-          <p><b>Hi my name is Bianca and this is my Portfolio <font color="hotpink">!</font></b> You can check out all of my stuff using the navigation bar on the left.</p>
-          <p>Our <b>actual</b> band name <b><font color="orange">The Clementines</font></b> draws inspiration from a sweet, juicy citrus fruit. Our music blends joy with the pain of love that lingers long after it's gone.</p>
 
-          <img src="sanriogifindex.gif" alt="Sanrio" class="sanrio-gif">
-        </div>
-      </div>
-    </div>
+  <div class="text-box">
+    <p><b>Hi my name is Bianca and this is my Portfolio <font color="hotpink">!</font></b> 
+       You can check out all of my stuff using the navigation bar on the left.</p>
+
+    <p> Who is <b><font color="pink">KawaiiKamera</font></b> ?
+       This name is something I go by online to express myself freely and share whatever I want without feeling judged.</p>
   </div>
+
+  <img src="https://web.archive.org/web/20091027040322if_/http://hk.geocities.com/marthangai/v3T40Do7.gif"
+       class="right-gif">
+</div>
+        </div>
 
   <div class="marquee-box">
     <center style="font-size:1.3em;"> ▶︎ •၊၊||၊|।||||।‌ـ၊|• 2:22 </center>
